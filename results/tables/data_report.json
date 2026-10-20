@@ -1,0 +1,16 @@
+{
+  "train_raw": {
+    "rows": 7642,
+    "columns": 22,
+    "duplicates": 0,
+    "missing_total": 0,
+    "non_numeric_columns": []
+  },
+  "test_raw": {
+    "rows": 3337,
+    "columns": 22,
+    "duplicates": 0,
+    "missing_total": 0,
+    "non_numeric_columns": []
+  }
+}
