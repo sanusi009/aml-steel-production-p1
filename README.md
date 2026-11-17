@@ -15,6 +15,9 @@ python src/scripts/run_pipeline.py
 ```
 Outputs: `results/tables/` (data_report.json, correlations.csv, model_comparison.csv) and `results/figures/` (histograms, correlation with output, model comparison bar plot with mean ± std).
 
+## Report and presentation
+The project report source is `report/report.tex` (compiled PDF: `report/report.pdf`). The ten-slide deck is available as `slides/slides.pptx`, with its Beamer source in `slides/slides.tex`. Both use figures from `results/figures/`.
+
 ## Pipeline (slide steps)
 1. Duplicate removal, missing-value check (counts reported; imputation code in place but unused by this data).
 2. Histograms and correlation of inputs with `output` (train data).
@@ -34,5 +37,6 @@ Random Forest is best on CV and validation. **All models fail on the provided te
 
 ## Limitations / status
 - Done: pipeline, tests (5 passing), tables and figures.
-- Not done (needs you): short report text (related work, motivation), 6-10 slides, LICENSE choice, ChatGPT-prompt acknowledgements, optional MLP/DNN comparison and hyperparameter tuning.
+- Done: report and ten-slide presentation, based on the saved results. The report records the cross-validation outlier-fence limitation and treats the train/test distribution explanation as an unverified hypothesis.
+- Not done (needs you): LICENSE choice, any required prompt-specific AI acknowledgements, optional MLP/DNN comparison and hyperparameter tuning.
 - Models use default-ish hyperparameters; no tuning.
